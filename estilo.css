@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    min-height: 100%;
+    position: relative;
+}
+body 
+{
+    font-family:'Open Sans';
+    background-color: #9BF6FF;
+    scroll-behavior: smooth;
+}
+nav,header, footer
+{
+    font-family:Roboto;
+}
+header
+{
+    height: 5rem;
+    text-align: center;
+   padding-top: 1.5rem;
+}
+nav
+{
+    padding: 0.7rem 0.833333%;
+    background-color: black;
+    width:100%; 
+    min-height: 6rem;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 5;
+}
+ul
+{
+    margin-top: 2rem;
+    margin-right: 2%;
+    float:right;
+    width: 70%;
+    text-align: right;
+}
+a
+{
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.4rem;
+}  
+a:hover
+{
+	color:#1C6E8C;
+    
+}
+li
+{
+    display: inline-block;
+    margin-right:5%;  /* Lo calculamos respecto al width del ul que es su caja contenedora que es 590 px*/
+
+}
+
+main
+{
+    width: 100%;/* Lo calculamos respecto al width de su caja contenedora que es 1200 px*/
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; 
+    min-height: 70vh; 
+    /* overflow: hidden; */
+    position: relative;
+    
+}
+section
+{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5em;
+    -webkit-box-shadow: 0px 6px 16px 2px rgba(15,12,12,0.2); 
+    box-shadow: 0px 6px 16px 2px rgba(15,12,12,0.2);
+}
+input[type=text], input[type=password]{
+	width: 100%;
+	margin: 2% auto;
+	box-sizing: border-box;
+	border: 2px rgb(116, 171, 223) solid;
+    border-radius: 10px;
+    padding-left: 2%;
+    height: 2rem;
+}
+input[type=submit]{
+	margin: auto;
+    height: 2rem;
+	width: 30%;
+	border: 3px skyblue solid;
+	background-color: #1C6E8C;
+    border-radius: 10px;
+    padding-left: 1%;
+    font-weight: bolder;
+}
+input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+form{
+	width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    height: 100px;
+    background-color: yellowgreen;
+}
